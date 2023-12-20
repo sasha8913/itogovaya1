@@ -54,6 +54,12 @@
     setTimeout(function() {
         document.body.classList.add('loaded');
     }, 500);
+	setTimeout(function() {
+        var preloader = document.getElementById('preloader');
+        if (preloader) {
+            preloader.remove();
+        }
+    }, 900);
 </script>
 
 </body>
