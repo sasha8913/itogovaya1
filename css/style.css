@@ -1,0 +1,95 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 1em;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #333;
+            color: #fff;
+        }
+		/* Стили для заголовка */
+header {
+  background-color: #3498db; /* Цвет фона */
+  padding: 20px; /* Внутренний отступ */
+  text-align: center; /* Выравнивание текста по центру */
+}
+
+h1 {
+  color: #fff; /* Цвет текста */
+}
+
+/* Стили для навигации */
+nav {
+  margin-top: 10px; /* Внешний отступ сверху */
+}
+
+a {
+  text-decoration: none; /* Убираем подчеркивание у ссылок */
+  color: #333; /* Цвет текста ссылок */
+  margin-right: 20px; /* Внутренний отступ справа */
+}
+
+a:hover {
+    color: #000000;
+    border-bottom: 1px dashed #000000;
+}
+
+        header {
+            text-align: center;
+            color: white; /* Цвет текста заголовка */
+            padding: 10px;
+    padding-top: 1px;
+        }
+
+        h1 {
+            position: relative;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto; /* Расположение картинки по центру */
+        }
+        nav a {
+            color: white; /* Цвет текста ссылок */
+            text-decoration: none; /* Убираем подчеркивание у ссылок */
+            margin: 0 10px;
+        }
+a {
+    position: relative;
+    text-decoration: none;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1.5px;
+    background-color: #000; /* Цвет линии */
+    transition: width 0.15s ease-in-out; /* Плавное изменение ширины за 0.3 секунды */
+}
+
+a:hover::after {
+    width: 100%; /* Линия проходит под всей шириной ссылки при наведении */
+}
