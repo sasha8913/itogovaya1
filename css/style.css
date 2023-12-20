@@ -94,7 +94,7 @@ a:hover::after {
     width: 100%; /* Линия проходит под всей шириной ссылки при наведении */
 }
 
-       /* Стили для прелоадера */
+        /* Стили для прелоадера */
         #preloader {
             position: fixed;
             top: 0;
@@ -106,6 +106,8 @@ a:hover::after {
             justify-content: center;
             align-items: center;
             z-index: 1000;
+            opacity: 1; /* Начальная непрозрачность */
+            transition: opacity 0.5s ease-out; /* Плавное изменение непрозрачности */
         }
 
         .spinner {
@@ -120,4 +122,9 @@ a:hover::after {
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
+        }
+
+        /* Правило для плавного исчезания прелоадера */
+        body.loaded #preloader {
+            opacity: 0;
         }
