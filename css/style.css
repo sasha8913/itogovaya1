@@ -131,16 +131,40 @@ a:hover::after {
     @keyframes fadeIn {
       from {
         opacity: 0;
-        margin-top: 10px;
       }
       to {
         opacity: 1;
-        margin-top: 0px;
+      }
+    }
+
+    @keyframes scaleIn {
+      from {
+        transform: scale(0.5);
+      }
+      to {
+        transform: scale(1);
+      }
+    }
+
+    @keyframes rotateIn {
+      from {
+        transform: rotate(-45deg);
+      }
+      to {
+        transform: rotate(0deg);
       }
     }
 
     .fadeInImage {
       animation: fadeIn 2s ease-in-out;
+    }
+
+    .scaleImage {
+      animation: scaleIn 2s ease-in-out;
+    }
+
+    .rotateImage {
+      animation: rotateIn 2s ease-in-out;
     }
 
     /* Добавьте дополнительные стили по вашему усмотрению */
